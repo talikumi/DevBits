@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Training</title>
+		 <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+		 <link href="css/style.css" rel="stylesheet" type="text/css" media="all">
+	 </head>
+
+<body>
+
+	<div class="wrapper">
+	<div class="title"><h1 align="center">Simple jQuery Text Previewer</h1></div>
+	<div id="container">
+		<input type="text" class="text" id="preview" placeholder="Enter your text here..." />
+	</div>
+	<div class="spacer">&nbsp;</div>
+	<div class="outer">
+		<form name="FormSettings">
+			<div class="row">
+				<label>Font-Family:</label>
+				<span class="formw">
+				<input type="text" name="font" id="character" size="25" />
+				</span>
+			</div>
+
+			<div class="row">
+			  <label>Font-color:</label>
+			  <span class="formw">
+				<input type="text" name="color" id="color" size="25" />
+			  </span>
+			</div>
+
+			<div class="row">
+			  <label>Font-size:</label>
+			  <span class="formw">
+				<input type="text" name="size" id="size" size="25" />
+			  </span>
+			</div>
+
+			<div class="row">
+			  <label>Backgr-color:</label>
+			  <span class="formw">
+				<input type="text" name="background" id="backgr" size="25" />
+			  </span>
+			</div>
+
+			<div class="row">
+			  <label>Border-color:</label>
+			  <span class="formw">
+				<input type="text" name="border" id="border" size="25" />
+			  </span>
+			</div>
+
+			<div class="row">
+			  <label>Letter-spacing:</label>
+			  <span class="formw">
+				<input type="text" name="spacing" id="spacing" size="25" />
+			  </span>
+			</div>
+
+			<div class="row">
+			  <label>Text Format:</label>
+			  <span class="formw">
+				&nbsp;
+				<select name="visibility" id="visibility">
+					<option value="None" selected>None</option>
+					<option value="Uppercase">Upper Case</option>
+					<option value="Lowercase">Lower Case</option>
+				</select>
+			  </span>
+			</div>
+
+			<div class="spacer">
+			&nbsp;
+			</div>
+			<div class="buttons">
+				<div>
+					<input type="button" value="Apply Changes" onclick="impostaStile()" />
+					<input type="button" value="Toggle Visibility" onclick="invertiVisibilità()"  />
+					<input id="blink" type="button" value="Blinking Effect" onclick="avviaTimer()"  />
+				</div>
+			</div>
+		 </form>
+
+		</div>
+	</div>
+	<script src="js/main.js"></script>
+	</body>
+</html>
